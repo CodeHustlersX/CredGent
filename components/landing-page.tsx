@@ -1,8 +1,10 @@
+'use client'
+
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Play } from "lucide-react"
 
-export default function Component() {
+export function LandingPage() {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
