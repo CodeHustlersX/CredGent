@@ -9,7 +9,7 @@ export default function Component() {
       <header className="flex items-center justify-between p-4 border-b">
         <div className="w-24 h-8 bg-muted rounded" />
         <div className="flex items-center gap-4">
-          <a href="#" className="text-sm text-muted-foreground">
+          <a href="#" className="text-sm text-muted-foreground max-md:hidden">
             What's Inside?
           </a>
           <Button variant="ghost" size="sm">
