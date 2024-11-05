@@ -14,8 +14,8 @@ export function LandingPage() {
           <a href="#" className="text-sm text-muted-foreground">
             What's Inside?
           </a>
-          <Button variant="ghost" size="sm">
-            Sign In
+          <Button variant="ghost" size="sm" asChild>
+            <a href="/dashboard">Sign In</a>
           </Button>
           <Button size="sm">Sign Up</Button>
         </div>
