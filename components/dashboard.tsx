@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Separator } from "@/components/ui/separator"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { ThemeToggle } from "./theme-toggle"
 
 export function Dashboard() {
   return (
@@ -47,14 +48,17 @@ export function Dashboard() {
 
       {/* Main Content */}
       <main className="flex-1 md:pl-64">
-        <div className="flex h-16 items-center justify-between px-4 md:px-8 border-b">
-          <h1 className="text-2xl font-semibold">Dashboard</h1>
-          <Button variant="ghost" size="sm" className="text-red-500 hover:text-red-600 hover:bg-red-50" asChild>
-            <a href="/">
-              <LogOut className="mr-2 h-4 w-4" />
-              Logout
-            </a>
-          </Button>
+        <div className="flex h-16 items-center justify-between max-md:justify-end px-4 md:px-8 border-b">
+          <h1 className="text-2xl font-semibold max-md:hidden">Dashboard</h1>
+          <div className="flex items-center gap-1">
+            <ThemeToggle />
+            <Button variant="ghost" size="sm" className="text-red-500 hover:text-red-600 hover:bg-red-50" asChild>
+              <a href="/">
+                <LogOut className="mr-2 h-4 w-4" />
+                Logout
+              </a>
+            </Button>
+          </div>
         </div>
         <div className="p-4 md:p-8">
           {/* Add your dashboard content here */}

@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Play } from "lucide-react"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 export function LandingPage() {
   return (
@@ -11,9 +12,10 @@ export function LandingPage() {
       <header className="flex items-center justify-between p-4 border-b">
         <div className="w-24 h-8 bg-muted rounded" />
         <div className="flex items-center gap-4">
-          <a href="#" className="text-sm text-muted-foreground">
+          <a href="#" className="text-sm text-muted-foreground max-md:hidden">
             What's Inside?
           </a>
+          <ThemeToggle />
           <Button variant="ghost" size="sm" asChild>
             <a href="/dashboard">Sign In</a>
           </Button>
