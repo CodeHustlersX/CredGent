@@ -1,9 +1,10 @@
-'use client'
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Play } from "lucide-react"
-import { ThemeToggle } from "@/components/theme-toggle"
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Play } from "lucide-react";
+import { ThemeToggle } from "@/components/theme-toggle";
+import Image from "next/image";
 
 export function LandingPage() {
   return (
@@ -28,10 +29,12 @@ export function LandingPage() {
         <div className="inline-block px-4 py-1.5 mb-4 text-sm bg-muted rounded-full">
           Internet Computer Protocol
         </div>
-        <h1 className="mb-4 text-4xl font-bold sm:text-5xl">Lorem ipsum dolor sit kemet</h1>
+        <h1 className="mb-4 text-4xl font-bold sm:text-5xl">
+          Lorem ipsum dolor sit kemet
+        </h1>
         <p className="max-w-2xl mx-auto mb-8 text-muted-foreground">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <Button size="lg">
@@ -43,7 +46,12 @@ export function LandingPage() {
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 5l7 7-7 7"
+              />
             </svg>
           </Button>
           <Button variant="outline" size="lg">
@@ -69,36 +77,95 @@ export function LandingPage() {
         </div>
       </section>
 
-      {/* Content Sections */}
-      {[1, 2, 3].map((section, i) => (
-        <section key={section} className="container px-4 mx-auto my-20">
-          <div className={`flex flex-col gap-8 items-center ${i % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'}`}>
+      <div>
+        {/* Section 1 */}
+        <section className="container px-4 mx-auto my-10">
+          <div className="flex flex-col-reverse gap-8 items-center md:flex-row">
             <div className="flex-1 space-y-4">
-              <h2 className="text-2xl font-bold">Lorem ipsum dolor sit amet</h2>
-              <h3 className="text-muted-foreground">Lorem ipsum dolor sit amet</h3>
+              <h2 className="text-2xl font-bold">Keamanan & Transparansi</h2>
               <p className="text-muted-foreground">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum.
+                Sistem generator sertifikat online kami memastikan setiap
+                sertifikat yang dihasilkan aman dan transparan. Dengan fitur
+                verifikasi dan keamanan data yang canggih, Anda dapat
+                mempercayakan validitas setiap sertifikat yang dihasilkan untuk
+                kebutuhan akademik, pelatihan, atau penghargaan.
               </p>
             </div>
-            <div className="w-64 h-64 bg-muted rounded-full shrink-0" />
+            <div className="w-48 h-48 sm:w-64 sm:h-64 rounded-full">
+              <Image
+                src="/images/Keamanan&Transparansi.png"
+                alt="Deskripsi gambar"
+                width={500}
+                height={500}
+              />
+            </div>
           </div>
         </section>
-      ))}
+
+        {/* Section 2 */}
+        <section className="container px-4 mx-auto my-10">
+          <div className="flex flex-col-reverse gap-8 items-center md:flex-row-reverse">
+            <div className="flex-1 space-y-4">
+              <h2 className="text-2xl font-bold">
+                Aksesibilitas & Bukti Abadi
+              </h2>
+              <p className="text-muted-foreground">
+                Generator sertifikat online kami memudahkan Anda untuk membuat
+                dan mengakses sertifikat kapan saja dan di mana saja. Sertifikat
+                yang dihasilkan akan tersimpan secara permanen, memastikan bukti
+                prestasi atau keahlian Anda tetap aman dan mudah diakses.
+              </p>
+            </div>
+            <div className="w-48 h-48 sm:w-64 sm:h-64 rounded-full">
+              <Image
+                src="/images/Aksesibilitas&BuktiAbadi.png"
+                alt="Deskripsi gambar"
+                width={500}
+                height={500}
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* Section 3 */}
+        <section className="container px-4 mx-auto my-10">
+          <div className="flex flex-col-reverse gap-8 items-center md:flex-row">
+            <div className="flex-1 space-y-4">
+              <h2 className="text-2xl font-bold">Pengakuan</h2>
+              <p className="text-muted-foreground">
+                Setiap sertifikat yang Anda buat melalui platform kami adalah
+                pengakuan resmi atas pencapaian Anda atau peserta Anda. Desain
+                profesional dan opsi kustomisasi memungkinkan Anda membuat
+                sertifikat yang unik dan kredibel, memberikan nilai lebih pada
+                setiap penghargaan yang diberikan.
+              </p>
+            </div>
+            <div className="w-48 h-48 sm:w-64 sm:h-64 rounded-full">
+              <Image
+                src="/images/Pengakuan.png"
+                alt="Deskripsi gambar"
+                width={500}
+                height={500}
+              />
+            </div>
+          </div>
+        </section>
+      </div>
 
       {/* Final Section */}
       <section className="container px-4 mx-auto my-20 text-center">
         <h2 className="mb-4 text-2xl font-bold">Lorem ipsum dolor sit amet</h2>
-        <p className="mb-12 text-muted-foreground">Lorem ipsum dolor sit amet</p>
+        <p className="mb-12 text-muted-foreground">
+          Lorem ipsum dolor sit amet
+        </p>
         <div className="grid gap-4 md:grid-cols-2">
           {[1, 2, 3, 4].map((card) => (
             <Card key={card} className="bg-muted/50">
               <CardContent className="p-6 space-y-4">
                 <div className="w-24 h-24 bg-muted rounded" />
-                <h3 className="text-lg font-semibold">Lorem ipsum dolor sit amet</h3>
+                <h3 className="text-lg font-semibold">
+                  Lorem ipsum dolor sit amet
+                </h3>
               </CardContent>
             </Card>
           ))}
@@ -122,5 +189,5 @@ export function LandingPage() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
