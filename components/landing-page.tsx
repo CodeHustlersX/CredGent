@@ -11,7 +11,21 @@ export function LandingPage() {
     <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="flex items-center justify-between p-4 border-b">
-        <div className="w-24 h-8 bg-muted rounded" />
+        <div className="pt-2">
+          <div className="inline-flex items-center px-2 text-sm rounded-lg">
+            <Image
+              src="/images/icon.png"
+              alt="Internet Computer Protocol"
+              width={25}
+              height={25}
+              className="bg-white rounded-md"
+            />
+            <span className="pr-2 text-black font-bold hidden sm:inline dark:text-white pl-2">
+              {" "}
+              CredGenT
+            </span>
+          </div>
+        </div>
         <div className="flex items-center gap-4">
           <a href="#" className="text-sm text-muted-foreground max-md:hidden">
             What's Inside?
@@ -26,15 +40,21 @@ export function LandingPage() {
 
       {/* Hero Section */}
       <section className="container px-4 py-20 mx-auto text-center">
-        <div className="inline-block px-4 py-1.5 mb-4 text-sm bg-muted rounded-full">
-          Internet Computer Protocol
+        <div className="inline-flex items-center px-2 py-1.5 mb-4 text-sm bg-muted rounded-full">
+          <Image
+            src="/images/icp.png"
+            alt="Internet Computer Protocol"
+            width={30}
+            height={30}
+            className="mr-0"
+          />
+          <span className="pr-2">Internet Computer Protocol</span>
         </div>
-        <h1 className="mb-4 text-4xl font-bold sm:text-5xl">
-          Lorem ipsum dolor sit kemet
-        </h1>
+        <h1 className="mb-4 text-4xl font-bold sm:text-5xl">CredGenT</h1>
         <p className="max-w-2xl mx-auto mb-8 text-muted-foreground">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Solusi modern untuk membuat, mengelola, dan memverifikasi sertifikat
+          secara online. Tingkatkan efisiensi dan kepercayaan dengan teknologi
+          otomatis yang andal dan mudah digunakan.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <Button size="lg">
@@ -82,18 +102,19 @@ export function LandingPage() {
         <section className="container px-4 mx-auto my-10">
           <div className="flex flex-col-reverse gap-8 items-center md:flex-row">
             <div className="flex-1 space-y-4">
-              <h2 className="text-2xl font-bold">Keamanan & Transparansi</h2>
+              <h2 className="text-2xl font-bold text-center md:text-start">
+                Pembuatan Sertifikat Otomatis
+              </h2>
               <p className="text-muted-foreground">
-                Sistem generator sertifikat online kami memastikan setiap
-                sertifikat yang dihasilkan aman dan transparan. Dengan fitur
-                verifikasi dan keamanan data yang canggih, Anda dapat
-                mempercayakan validitas setiap sertifikat yang dihasilkan untuk
-                kebutuhan akademik, pelatihan, atau penghargaan.
+                Hemat waktu dengan fitur pembuatan sertifikat otomatis. Sistem
+                kami memungkinkan Anda untuk mencetak sertifikat secara instan
+                dengan desain yang profesional dan personalisasi yang sesuai
+                dengan kebutuhan Anda.
               </p>
             </div>
-            <div className="w-48 h-48 sm:w-64 sm:h-64 rounded-full">
+            <div className="w-36 h-36 rounded-full">
               <Image
-                src="/images/Keamanan&Transparansi.png"
+                src="/images/PembuatanSertifikatOtomatis.png"
                 alt="Deskripsi gambar"
                 width={500}
                 height={500}
@@ -106,19 +127,19 @@ export function LandingPage() {
         <section className="container px-4 mx-auto my-10">
           <div className="flex flex-col-reverse gap-8 items-center md:flex-row-reverse">
             <div className="flex-1 space-y-4">
-              <h2 className="text-2xl font-bold">
-                Aksesibilitas & Bukti Abadi
+              <h2 className="text-2xl font-bold text-center md:text-start">
+                Pengelolaan Daftar Peserta
               </h2>
               <p className="text-muted-foreground">
-                Generator sertifikat online kami memudahkan Anda untuk membuat
-                dan mengakses sertifikat kapan saja dan di mana saja. Sertifikat
-                yang dihasilkan akan tersimpan secara permanen, memastikan bukti
-                prestasi atau keahlian Anda tetap aman dan mudah diakses.
+                Kelola data peserta dengan mudah dan terorganisir. Platform kami
+                dilengkapi fitur manajemen data yang aman, memungkinkan Anda
+                untuk mengunggah, menyimpan, dan mengakses data peserta kapan
+                saja.
               </p>
             </div>
-            <div className="w-48 h-48 sm:w-64 sm:h-64 rounded-full">
+            <div className="w-36 h-36 rounded-full">
               <Image
-                src="/images/Aksesibilitas&BuktiAbadi.png"
+                src="/images/PengelolaanDaftarPeserta.png"
                 alt="Deskripsi gambar"
                 width={500}
                 height={500}
@@ -131,18 +152,43 @@ export function LandingPage() {
         <section className="container px-4 mx-auto my-10">
           <div className="flex flex-col-reverse gap-8 items-center md:flex-row">
             <div className="flex-1 space-y-4">
-              <h2 className="text-2xl font-bold">Pengakuan</h2>
+              <h2 className="text-2xl font-bold text-center md:text-start">
+                Transfer Sertifikat
+              </h2>
               <p className="text-muted-foreground">
-                Setiap sertifikat yang Anda buat melalui platform kami adalah
-                pengakuan resmi atas pencapaian Anda atau peserta Anda. Desain
-                profesional dan opsi kustomisasi memungkinkan Anda membuat
-                sertifikat yang unik dan kredibel, memberikan nilai lebih pada
-                setiap penghargaan yang diberikan.
+                Berbagi sertifikat kini lebih praktis! Kami menyediakan fitur
+                transfer sertifikat yang memungkinkan pengiriman langsung kepada
+                peserta melalui email atau platform digital lainnya.
               </p>
             </div>
-            <div className="w-48 h-48 sm:w-64 sm:h-64 rounded-full">
+            <div className="w-36 h-36 rounded-full">
               <Image
-                src="/images/Pengakuan.png"
+                src="/images/TransferSertifikat.png"
+                alt="Deskripsi gambar"
+                width={500}
+                height={500}
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* Section 4 */}
+        <section className="container px-4 mx-auto my-10">
+          <div className="flex flex-col-reverse gap-8 items-center md:flex-row-reverse">
+            <div className="flex-1 space-y-4">
+              <h2 className="text-2xl font-bold text-center md:text-start">
+                Verifikasi Otentikasi
+              </h2>
+              <p className="text-muted-foreground">
+                Pastikan keaslian sertifikat Anda dengan fitur verifikasi
+                otentifikasi. Setiap sertifikat dilengkapi dengan kode unik yang
+                dapat diverifikasi secara online untuk menjaga validitas dan
+                kredibilitasnya.
+              </p>
+            </div>
+            <div className="w-36 h-36 rounded-full">
+              <Image
+                src="/images/VerifikasiOtentikasiPublik.png"
                 alt="Deskripsi gambar"
                 width={500}
                 height={500}
@@ -181,9 +227,72 @@ export function LandingPage() {
               <a href="#">Privacy Policy</a>
             </div>
             <div className="flex gap-4">
-              {[1, 2, 3, 4].map((social) => (
-                <div key={social} className="w-8 h-8 bg-muted rounded-full" />
-              ))}
+              <div className="flex w-8 h-8 bg-slate-200 items-center justify-center rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  color="#000000"
+                  fill="none"
+                >
+                  <path
+                    d="M3 21L10.5484 13.4516M21 3L13.4516 10.5484M13.4516 10.5484L8 3H3L10.5484 13.4516M13.4516 10.5484L21 21H16L10.5484 13.4516"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div className="flex w-8 h-8 bg-slate-200 items-center justify-center rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  color="#000000"
+                  fill="none"
+                >
+                  <path
+                    d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M16.5 12C16.5 14.4853 14.4853 16.5 12 16.5C9.51472 16.5 7.5 14.4853 7.5 12C7.5 9.51472 9.51472 7.5 12 7.5C14.4853 7.5 16.5 9.51472 16.5 12Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M17.5078 6.5L17.4988 6.5"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div className="flex w-8 h-8 bg-slate-200 items-center justify-center rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  color="#000000"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.18182 10.3333C5.20406 10.3333 5 10.5252 5 11.4444V13.1111C5 14.0304 5.20406 14.2222 6.18182 14.2222H8.54545V20.8889C8.54545 21.8081 8.74951 22 9.72727 22H12.0909C13.0687 22 13.2727 21.8081 13.2727 20.8889V14.2222H15.9267C16.6683 14.2222 16.8594 14.0867 17.0631 13.4164L17.5696 11.7497C17.9185 10.6014 17.7035 10.3333 16.4332 10.3333H13.2727V7.55556C13.2727 6.94191 13.8018 6.44444 14.4545 6.44444H17.8182C18.7959 6.44444 19 6.25259 19 5.33333V3.11111C19 2.19185 18.7959 2 17.8182 2H14.4545C11.191 2 8.54545 4.48731 8.54545 7.55556V10.3333H6.18182Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
