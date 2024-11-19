@@ -26,10 +26,12 @@ export function LandingPage() {
             </span>
           </div>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="pl-20">
           <a href="#" className="text-sm text-muted-foreground max-md:hidden">
             What's Inside?
           </a>
+        </div>
+        <div className="flex items-center gap-4">
           <ThemeToggle />
           <Button variant="ghost" size="sm" asChild>
             <a href="/dashboard">Sign In</a>
@@ -100,21 +102,25 @@ export function LandingPage() {
       <div>
         {/* Section 1 */}
         <section className="container px-4 mx-auto my-10">
+          <h2 className="mb-8 text-2xl text-center font-bold underline">
+            Keuntungan Yang Didapatkan
+          </h2>
           <div className="flex flex-col-reverse gap-8 items-center md:flex-row">
             <div className="flex-1 space-y-4">
               <h2 className="text-2xl font-bold text-center md:text-start">
-                Pembuatan Sertifikat Otomatis
+                Keamanan & Transparansi
               </h2>
               <p className="text-muted-foreground">
-                Hemat waktu dengan fitur pembuatan sertifikat otomatis. Sistem
-                kami memungkinkan Anda untuk mencetak sertifikat secara instan
-                dengan desain yang profesional dan personalisasi yang sesuai
-                dengan kebutuhan Anda.
+                Sistem generator sertifikat online kami memastikan setiap
+                sertifikat yang dihasilkan aman dan transparan. Dengan fitur
+                verifikasi dan keamanan data yang canggih, Anda dapat
+                mempercayakan validitas setiap sertifikat yang dihasilkan untuk
+                kebutuhan akademik, pelatihan, atau penghargaan.
               </p>
             </div>
             <div className="w-36 h-36 rounded-full">
               <Image
-                src="/images/PembuatanSertifikatOtomatis.png"
+                src="/images/Keamanan&Transparansi.png"
                 alt="Deskripsi gambar"
                 width={500}
                 height={500}
@@ -128,18 +134,18 @@ export function LandingPage() {
           <div className="flex flex-col-reverse gap-8 items-center md:flex-row-reverse">
             <div className="flex-1 space-y-4">
               <h2 className="text-2xl font-bold text-center md:text-start">
-                Pengelolaan Daftar Peserta
+                Aksesibilitas & Bukti Abadi
               </h2>
               <p className="text-muted-foreground">
-                Kelola data peserta dengan mudah dan terorganisir. Platform kami
-                dilengkapi fitur manajemen data yang aman, memungkinkan Anda
-                untuk mengunggah, menyimpan, dan mengakses data peserta kapan
-                saja.
+                Generator sertifikat online kami memudahkan Anda untuk membuat
+                dan mengakses sertifikat kapan saja dan di mana saja. Sertifikat
+                yang dihasilkan akan tersimpan secara permanen, memastikan bukti
+                prestasi atau keahlian Anda tetap aman dan mudah diakses.
               </p>
             </div>
             <div className="w-36 h-36 rounded-full">
               <Image
-                src="/images/PengelolaanDaftarPeserta.png"
+                src="/images/Aksesibilitas&BuktiAbadi.png"
                 alt="Deskripsi gambar"
                 width={500}
                 height={500}
@@ -153,42 +159,19 @@ export function LandingPage() {
           <div className="flex flex-col-reverse gap-8 items-center md:flex-row">
             <div className="flex-1 space-y-4">
               <h2 className="text-2xl font-bold text-center md:text-start">
-                Transfer Sertifikat
+                Pengakuan
               </h2>
               <p className="text-muted-foreground">
-                Berbagi sertifikat kini lebih praktis! Kami menyediakan fitur
-                transfer sertifikat yang memungkinkan pengiriman langsung kepada
-                peserta melalui email atau platform digital lainnya.
+                Setiap sertifikat yang Anda buat melalui platform kami adalah
+                pengakuan resmi atas pencapaian Anda atau peserta Anda. Desain
+                profesional dan opsi kustomisasi memungkinkan Anda membuat
+                sertifikat yang unik dan kredibel, memberikan nilai lebih pada
+                setiap penghargaan yang diberikan.
               </p>
             </div>
             <div className="w-36 h-36 rounded-full">
               <Image
-                src="/images/TransferSertifikat.png"
-                alt="Deskripsi gambar"
-                width={500}
-                height={500}
-              />
-            </div>
-          </div>
-        </section>
-
-        {/* Section 4 */}
-        <section className="container px-4 mx-auto my-10">
-          <div className="flex flex-col-reverse gap-8 items-center md:flex-row-reverse">
-            <div className="flex-1 space-y-4">
-              <h2 className="text-2xl font-bold text-center md:text-start">
-                Verifikasi Otentikasi
-              </h2>
-              <p className="text-muted-foreground">
-                Pastikan keaslian sertifikat Anda dengan fitur verifikasi
-                otentifikasi. Setiap sertifikat dilengkapi dengan kode unik yang
-                dapat diverifikasi secara online untuk menjaga validitas dan
-                kredibilitasnya.
-              </p>
-            </div>
-            <div className="w-36 h-36 rounded-full">
-              <Image
-                src="/images/VerifikasiOtentikasiPublik.png"
+                src="/images/Pengakuan.png"
                 alt="Deskripsi gambar"
                 width={500}
                 height={500}
@@ -200,21 +183,66 @@ export function LandingPage() {
 
       {/* Final Section */}
       <section className="container px-4 mx-auto my-20 text-center">
-        <h2 className="mb-4 text-2xl font-bold">Lorem ipsum dolor sit amet</h2>
-        <p className="mb-12 text-muted-foreground">
-          Lorem ipsum dolor sit amet
-        </p>
-        <div className="grid gap-4 md:grid-cols-2">
-          {[1, 2, 3, 4].map((card) => (
-            <Card key={card} className="bg-muted/50">
-              <CardContent className="p-6 space-y-4">
-                <div className="w-24 h-24 bg-muted rounded" />
-                <h3 className="text-lg font-semibold">
-                  Lorem ipsum dolor sit amet
-                </h3>
-              </CardContent>
-            </Card>
-          ))}
+        <h2 className="mb-8 text-2xl font-bold underline">
+          Fitur Yang Ditawarkan
+        </h2>
+        <div className="grid gap-4 sm:grid-cols-2">
+          <Card className="bg-muted/50">
+            <CardContent className="p-6 space-y-4">
+              <div className="w-24 h-24 mx-auto md:mx-0 rounded-full">
+                <Image
+                  src="/images/PembuatanSertifikatOtomatis.png"
+                  alt="Deskripsi gambar"
+                  width={500}
+                  height={500}
+                />
+              </div>
+              <h3 className="text-lg font-semibold">
+                Pembuatan Sertifikat Otomatis
+              </h3>
+            </CardContent>
+          </Card>
+          <Card className="bg-muted/50">
+            <CardContent className="p-6 space-y-4">
+              <div className="w-24 h-24 mx-auto md:mx-0 rounded-full">
+                <Image
+                  src="/images/PengelolaanDaftarPeserta.png"
+                  alt="Deskripsi gambar"
+                  width={500}
+                  height={500}
+                />
+              </div>
+              <h3 className="text-lg font-semibold">
+                Pengelolaan Daftar Peserta
+              </h3>
+            </CardContent>
+          </Card>
+          <Card className="bg-muted/50">
+            <CardContent className="p-6 space-y-4">
+              <div className="w-24 h-24 mx-auto md:mx-0 rounded-full">
+                <Image
+                  src="/images/TransferSertifikat.png"
+                  alt="Deskripsi gambar"
+                  width={500}
+                  height={500}
+                />
+              </div>
+              <h3 className="text-lg font-semibold">Transfer Sertifikat</h3>
+            </CardContent>
+          </Card>
+          <Card className="bg-muted/50">
+            <CardContent className="p-6 space-y-4">
+              <div className="w-24 h-24 mx-auto md:mx-0 rounded-full">
+                <Image
+                  src="/images/VerifikasiOtentikasiPublik.png"
+                  alt="Deskripsi gambar"
+                  width={500}
+                  height={500}
+                />
+              </div>
+              <h3 className="text-lg font-semibold">Verifikasi Otentikasi</h3>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
